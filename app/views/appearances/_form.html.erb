@@ -1,0 +1,9 @@
+<%= form_for do |f| %>
+<%= f.lable :guest %>
+<%= f.collecton_select :guest_id, guest.id, :name %>
+<%= f.label :episode %>
+<%= f.collecton_select :episode_id, episode.id, :date %>
+<%= f.label :rating %>
+<%= f.numberic_field :rating %>
+<%= f.submit %>
+<% end %>
